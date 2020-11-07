@@ -1,61 +1,179 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    <meta charset="utf-8">
-    <title>Fabiana Philipi</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" media="all">
-<style>
-    body {
-        font-family: Montserrat, sans-serif;
-        background-color: #6EAFAF;
-    }
-    h1, h2, li {
-        color: white;
-    }
-    .button {
-        border-radius: 4px;
-        background-color: #1A2323;
-        padding: 7px 30px;
-        color: white;
-        font-size: 16px;
-        line-height: 20px;
-        font-weight: 700;
-        text-decoration: none;
-      }
-    .link {
-        text-decoration: none;
-        color: white;
-    }
+<html lang="en">
 
-</style>
+<head>
+  <meta charset="utf-8">
+  <title>Portfólio Fabiana Philipi</title>
 
+  <link rel="stylesheet" media="screen" href="style.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Dave Shea">
+  <meta name="description" content="A demonstration of what can be accomplished visually through CSS-based design.">
+  <meta name="robots" content="all">
+
+  <script src="https://kit.fontawesome.com/ddff25e76d.js" crossorigin="anonymous"></script>
 </head>
-<body>
-<h1> Portfólio Fabiana Philipi </h1>
-<hr>
 
-<img src="Img/Foto_Trybe.jpg" alt="Fabi" width="400px">  
+<!--
+	View source is a feature, not a bug. Thanks for your curiosity and
+	interest in participating!
 
-<h2> São Paulo - SP - Brasil </h2>
-<ul>
-    <li><a class="link" target="_blank" href="https://www.linkedin.com/in/fabiana-philipi-91785542/"><strong>Linkedin</strong></a></li>
-    <li><a class="link" target="_blank" href="https://www.facebook.com/fabiana.philipi"><strong>Facebook</strong></a></li>
-</ul>
+	Here are the submission guidelines for the new and improved csszengarden.com:
 
-<h2> Minha <strong>rádio favorita</strong> </h2>
+	- CSS3? Of course! Prefix for ALL browsers where necessary.
+	- go responsive; test your layout at multiple screen sizes.
+	- your browser testing baseline: IE9+, recent Chrome/Firefox/Safari, and iOS/Android
+	- Graceful degradation is acceptable, and in fact highly encouraged.
+	- use classes for styling. Don't use ids.
+	- web fonts are cool, just make sure you have a license to share the files. Hosted 
+	  services that are applied via the CSS file (ie. Google Fonts) will work fine, but
+	  most that require custom HTML won't. TypeKit is supported, see the readme on this
+	  page for usage instructions: https://github.com/mezzoblue/csszengarden.com/
 
-<a class="button" target="_blank" href="https://eldorado.estadao.com.br/">Rádio eldorado</a>
-<br><br>
-<hr>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<a class="link" href="Img/Foto_Trybe.jpg"><strong>Veja a foto</strong></a>
+	And a few tips on building your CSS file:
+
+	- use :first-child, :last-child and :nth-child to get at non-classed elements
+	- use ::before and ::after to create pseudo-elements for extra styling
+	- use multiple background images to apply as many as you need to any element
+	- use the Kellum Method for image replacement, if still needed. http://goo.gl/GXxdI
+	- don't rely on the extra divs at the bottom. Use ::before and ::after instead.
+		
+-->
+
+<body id="css-zen-garden">
+  <div class="page-wrapper">
+
+    <section class="intro" id="zen-intro">
+      <header role="banner">
+        <h2>Fabiana Philipi Portfolio
+          <img src="img/foto_perfil2.png" alt="Perfil picture">
+          <div class="social-media-container">
+            <a class="social-media" target="_blank" href="https://www.linkedin.com/in/fabiana-philipi-91785542/"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a class="social-media" target="_blank" href="https://github.com/FPhilipi"><i class="fab fa-github"></i></a>
+          </div>
+        </h2>
+      </header>
+
+      <div class="summary" id="zen-summary" role="article">
+        <p>I am a environmental engineer with M.Sc. and taking a fullstack development course in <a
+            href="https://www.betrybe.com/" target="_blanck">Trybe.</a></p>
+        <p>I am Project Management Officer certified by PMI with 10 years of experience managing projects.</p>
+        <p>Hard skills:<br>
+          HTML<br>
+          CSS<br>
+          Javascript<br>
+          React<br>
+          Git<br>
+        </p>
+        <p>Soft skills:<br>
+          Teamwork<br>
+          Communication<br>
+          Decisiveness<br>
+          Flexibility<br>
+          Negotiation<br>
+        </p>
+      </div>
+      
+      <aside class="sidebar" role="complementary">
+        <div class="wrapper">
+
+          <div class="design-selection" id="design-selection">
+            <h3 class="select">Select a Project:</h3>
+            <nav role="navigation">
+              <ul>
+                <li>
+                  <br><br>
+                  <a class="designer-name">Meme Generator</a><br>
+                </li>
+                <li>
+                  <br><br>
+                  <a class="designer-name">Meme Generator</a><br>
+                </li>
+                <li>
+                  <br><br>
+                  <a class="designer-name">Meme Generator</a><br>
+                </li>
+                <li>
+                  <br><br>
+                  <a class="designer-name">Meme Generator</a><br>
+                </li>
+                <li>
+                  <br><br>
+                  <a class="designer-name">Meme Generator</a><br>
+                </li>
+                <!-- <li>
+                  <a href="/217/" class="design-name">Screen Filler</a> by <a href="http://elliotjaystocks.com/"
+                    class="designer-name">Elliot Jay Stocks</a>
+                </li>
+                <li>
+                  <a href="/216/" class="design-name">Fountain Kiss</a> by <a href="http://jeremycarlson.com"
+                    class="designer-name">Jeremy Carlson</a>
+                </li>
+                <li>
+                  <a href="/215/" class="design-name">A Robot Named Jimmy</a> by <a href="http://meltmedia.com/"
+                    class="designer-name">meltmedia</a>
+                </li>
+                <li>
+                  <a href="/214/" class="design-name">Verde Moderna</a> by <a href="http://www.mezzoblue.com/"
+                    class="designer-name">Dave Shea</a>
+                </li> -->
+              </ul>
+            </nav>
+          </div>
+
+          <div class="zen-resources" id="zen-resources">
+            <h3 class="resources">Website:</h3>
+            <ul>
+              <li class="view-css">
+                <a href="" title="View the source CSS file of the currently-viewed design.">
+                  <abbr title="Cascading Style Sheets">Under construction</abbr> </a>
+              </li>
+              <!-- <li class="css-resources">
+                <a href="http://www.mezzoblue.com/zengarden/resources/"
+                  title="Links to great sites with information on using CSS.">
+                  <abbr title="Cascading Style Sheets">CSS</abbr> Resources </a>
+              </li>
+              <li class="zen-faq">
+                <a href="http://www.mezzoblue.com/zengarden/faq/"
+                  title="A list of Frequently Asked Questions about the Zen Garden.">
+                  <abbr title="Frequently Asked Questions">FAQ</abbr> </a>
+              </li>
+              <li class="zen-submit">
+                <a href="http://www.mezzoblue.com/zengarden/submit/" title="Send in your own CSS file.">
+                  Submit a Design </a>
+              </li>
+              <li class="zen-translations">
+                <a href="http://www.mezzoblue.com/zengarden/translations/"
+                  title="View translated versions of this page.">
+                  Translations </a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </aside>
+      <footer>
+        <p>CSS Zen Garden submission 221 - 'Mid Century Modern',<a href="http://www.andrewlohman.com/" target="_blank">
+            by Andrew Lohman,</a> used under <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank">CC
+            BY</a>/Desaturated from original</p>
+      </footer>
+  </div>
+
+  <!--
+
+	These superfluous divs/spans were originally provided as catch-alls to add extra imagery.
+	These days we have full ::before and ::after support, favour using those instead.
+	These only remain for historical design compatibility. They might go away one day.
+		
+-->
+  <div class="extra1" role="presentation"></div>
+  <div class="extra2" role="presentation"></div>
+  <div class="extra3" role="presentation"></div>
+  <div class="extra4" role="presentation"></div>
+  <div class="extra5" role="presentation"></div>
+  <div class="extra6" role="presentation"></div>
+
 </body>
+
 </html>
