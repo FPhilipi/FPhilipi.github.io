@@ -1,6 +1,13 @@
+p {
+    font-family: fantasy;
+    font-size: 30px;
+    
+}
+
 #meme-image-container {
     background-color: rgb(255,255,255);
     border: 1px solid rgb(0,0,0);
+    width: 50%;
 }
 
 #meme-image {

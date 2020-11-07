@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Meme-Generator</title>
-</head>
-<body>
-<label> Texto: <input type="text" maxlength="60" id="text-input"></label>
-<label> Foto: <input type="file" id="meme-insert" accept="image/*"></label>
-<section id="meme-image-container"> 
-    
-    <div id="meme-text"></div>
-    
-    <img id="meme-image" height = "400px" widht = "400px">
 
-</section>    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Meme-Generator</title>
+</head>
+
+<body>
+  <h1>Super-hiper Meme Generator!</h1><br><br>
+  <label> Texto: <input type="text" maxlength="60" id="text-input"></label>
+  <label> Foto: <input type="file" id="meme-insert" accept="image/*"></label>
+  
+  <section id="meme-image-container">
+
+    <div id="meme-text"></div>
+
+    <img id="meme-image" height="400px" widht="400px">
+  </section>
+  <button id="fire" class="fire">Fire</button>
+  <button id="water" class="water">Water</button>
+  <button id="earth" class="earth">Earth</button><br><br>
+  <img id="meme-1" class="preset-image" src="img/baby.jpg" width="80px" height="60px" alt="Baby meme">
+
+
+  <script src="script.js"></script>
 </body>
+
 </html>
